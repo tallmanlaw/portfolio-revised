@@ -1,0 +1,151 @@
+body {
+    height: 98vh;
+    background: url(assets/bckgrnd.png);
+    margin: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.portrait {
+    width: 100px;
+    border-radius: 100px;
+    border-radius: 100%;
+    background-size: cover;
+    border: 3px solid #2c5fa8;
+    position: relative;
+    left: 30%;
+}
+h1, h2, p {
+    line-height: normal;
+    color: black;
+}
+.navbar {
+    padding-top: 25px;
+    text-align: center;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+h2 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-bottom: 2px solid #FFFFFF;
+    padding: 20px;
+    flex: 1 100%;
+}
+p {
+    font:'Open Sans';
+    font-size: 14px;
+}
+main {
+    height: 100%;
+    background-color: gray;
+    padding: 20px;
+}
+.gallery {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+}
+.box {
+    height: 200px;
+    grid-row: span 1;
+    grid-column: span 1;
+    display: grid;
+    background-size: cover;
+}
+:hover {
+    background-position: center;
+}
+.one {
+    background-image: url(assets/JS\ directory.png);
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+}
+
+.two {
+    background-image: url(assets/fansy.png);
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+}
+.three {
+    background-image: url(assets/bhappy.png);
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+}
+.four {
+    background-image: url(assets/the\ pics.png);
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+   
+}
+footer {
+    border-top: 2px solid #FFFFFF;
+    margin-top: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    flex: 1 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        text-align: left;
+        margin: 30px;
+    }
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    main {
+        padding: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    h1 {
+        padding-left: 30px;
+    }
+    h2 {
+        padding-left: 30px;
+    }
+    p {
+        padding-left: 30px;
+    }
+    .portrait {
+        position: absolute;
+        left: 80%;
+        top: 53%;
+        width: 150px;
+        border-radius: 150px;
+        border-radius: 100%;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        height: 75%;
+        padding-top: 40px;
+        padding-bottom: 150px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    p {
+        width: 400px;
+    }
+}
